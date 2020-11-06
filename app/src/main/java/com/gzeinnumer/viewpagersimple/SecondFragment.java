@@ -9,6 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 public class SecondFragment extends Fragment {
 
+    public static SecondFragment instance(){
+        return new SecondFragment();
+    }
+
     public SecondFragment() {
         // Required empty public constructor
     }

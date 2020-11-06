@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
 
-        viewPagerAdapter.addFragment(new FirstFragment(), "First");
-        viewPagerAdapter.addFragment(new SecondFragment(), "Second");
+        viewPagerAdapter.addFragment(FirstFragment.instance(), "First");
+        viewPagerAdapter.addFragment(SecondFragment.instance(), "Second");
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
